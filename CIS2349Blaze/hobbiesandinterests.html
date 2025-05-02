@@ -5,128 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies and Interests - Blaze Cardner</title>
-<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            background-color: #ADD8E6;
-            text-align: left;
-            padding: 20px;
-            margin: 0;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-
-        .sidebar {
-            background-color: #333;
-            width: 200px;
-            height: 100vh;
-            padding-top: 60px;
-            position: fixed;
-            top: 80px;
-            left: 0;
-        }
-
-        .sidebar a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            text-align: left;
-            padding: 15px;
-            font-size: 20px;
-            background-color: #333; 
-            transition: background-color 0.3s ease; /* Smooth transition for color change */
-        }
-
-        .sidebar a:hover {
-            background-color: #ADD8E6; 
-            color: #333; /* Text color changes on hover */
-        }
-
-        .content {
-            margin-left: 220px;
-            padding: 100px 20px 20px 20px;
-            width: calc(100% - 220px);
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: square;
-            font-size: 18px;
-            color: #333;
-            padding-left: 20px;
-        }
-
-        .hobby-image {
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-
-        
-        .go-back-btn {
-            display: inline-block;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            transition: background-color 0.3s ease; /* Smooth transition for color change */
-            margin-top: 20px;
-        }
-
-        .go-back-btn:hover {
-            background-color: #ADD8E6; /* Light blue on hover */
-            color: #333; /* Text color changes on hover */
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <h1>Blaze Cardner's Website CIS 2329</h1>
 
-        <div class="sidebar">
-        <a href="About.html">About</a>
-	  <a href="awards.html">Awards</a>
-        <a href="HobbiesandInterests.html">Hobbies and Interests</a>
-	  <a href="Sandbox.html">Sandbox</a>
+    <div class="sidebar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="awards.html">Awards</a>
+        <a href="hobbiesandinterests.html">Hobbies and Interests</a>
+        <a href="sandbox.html">Sandbox</a>
     </div>
 
     <div class="content">
         <h2>Hobbies and Interests</h2>
-        
+
         <p>Here are some of the things I love doing in my free time:</p>
 
-        <ol>
+        <ol id="hobbiesList">
             <li>Baseball</li>
             <li>The Gym</li>
             <li>Golf</li>
@@ -139,19 +38,24 @@
             <li>Cooking</li>
         </ol>
 
-
-<div style="position: relative; left: 600px; top: -300px;">
-  <img src=".\Images\blazegolf.jpg" alt="">
-</div>
-
-		<div style="position: relative; left: 40px; top: -575px;">
-        <!-- Go Back Home Button with the hover effect -->
-        <a href="home.html" class="go-back-btn">Go Back Home</a>
-</div>
         <div>
-       
+            <button id="showNumbers">Show Numbers</button>
+            <button id="showSquares">Show Squares</button>
+        </div>
+
+        <div style="position: relative; left: 600px; top: -350px;">
+            <img src="./imgs/blazegolf.jpg" alt="">
+        </div>
+
+        <div style="position: relative; left: 40px; top: -625px;">
+            <a href="home.html" class="go-back-btn">Go Back Home</a>
+        </div>
+        <div>
+
         </div>
     </div>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
