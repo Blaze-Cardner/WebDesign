@@ -5,159 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandbox - Blaze Cardner</title>
-<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-
-    <style>
-        /* ... (All the CSS from your Awards page goes here) ... */
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            background-color: #ADD8E6;
-            text-align: left;
-            padding: 20px;
-            margin: 0;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 10;
-            /* Neon text effect */
-            text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0; /* Green neon */
-            color: #0f0; /* Green text */
-        }
-
-        .sidebar {
-            background-color: #333;
-            width: 200px;
-            height: 100vh;
-            padding-top: 60px;
-            position: fixed;
-            top: 80px;
-            left: 0;
-        }
-
-        .sidebar a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            text-align: left;
-            padding: 15px;
-            font-size: 20px;
-        }
-
-        .sidebar a:hover {
-            background-color: #575757;
-        }
-
-        .content {
-            margin-left: 220px;
-            padding: 100px 20px 20px 20px;
-            width: calc(100% - 220px);
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            text-align: left;
-        }
-
-        h2 {
-            color: #333;
-            text-align: left;
-            width: 100%;
-            margin-bottom: 20px;
-            /* Underline effect */
-            text-decoration: underline wavy #ADD8E6; /* Light blue wavy underline */
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2.0;
-            /* Add a subtle shadow to the text */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        }
-
-        a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #333;
-            padding: 10px;
-            background-color: #ADD8E6;
-            border-radius: 5px;
-            /* Gradient background on the link */
-            background-image: linear-gradient(to bottom right, #ADD8E6, #87CEFA); /* Light blue gradient */
-            transition: background-color 0.3s ease; /* Smooth transition for hover */
-
-        }
-
-        a:hover {
-            background-color: #575757;
-            color: white;
-            /* Add a glow effect on hover */
-            box-shadow: 0 0 10px #fff;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <h1>Blaze Cardner's Website CIS 2329</h1>
 
     <div class="sidebar">
-        <a href="About.html">About</a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
         <a href="awards.html">Awards</a>
-        <a href="HobbiesandInterests.html">Hobbies and Interests</a>
-        <a href="Sandbox.html">Sandbox</a>
+        <a href="hobbiesandinterests.html">Hobbies and Interests</a>
+        <a href="sandbox.html">Sandbox</a>
     </div>
 
-    <div class="content">
+    <div class="content sandbox">
         <h2>Welcome to my Sandbox!</h2>
         <p>I have attempted to explore. I love HTML!</p>
 
         <p><strong>Here is bold text</strong> and <em>here is italicized text</em>.
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Information</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>  Blaze Cardner</td>
-    </tr>
-    <tr>
-      <td>Location</td>
-      <td>  Brownwood, Texas</td>
-    </tr>
-    <tr>
-      <td>Current Role/Occupation</td>
-      <td>IT Help Desk Specialist Intern</td>
-    </tr>
-    <tr>
-      <td>Education</td>
-      <td>  CIS- System Development at Howard Payne University</td>
-    </tr>
-    <tr>
-      <td>Career Aspirations</td>
-      <td>  To Join the USAF, serve the country, and work IT for the military.</td>
-    </tr>
-    <tr>
-      <td>Academic Interests</td>
-      <td>  Database Management, Programming, Help Desk, and Criminal Justice</td>
-    </tr>
-  </tbody>
-</table>
-</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td> Blaze Cardner</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td> Brownwood, Texas</td>
+                    </tr>
+                    <tr>
+                        <td>Current Role/Occupation</td>
+                        <td>IT Help Desk Specialist Intern</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td> CIS- System Development at Howard Payne University</td>
+                    </tr>
+                    <tr>
+                        <td>Career Aspirations</td>
+                        <td> To Join the USAF, serve the country, and work IT for the military.</td>
+                    </tr>
+                    <tr>
+                        <td>Academic Interests</td>
+                        <td> Database Management, Programming, Help Desk, and Criminal Justice</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
 
-        <a href="home.html">Go Back Home</a>
+        <a href="home.html" class="go-back-btn">Go Back Home</a>
     </div>
 </body>
 
